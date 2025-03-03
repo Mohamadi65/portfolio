@@ -53,7 +53,7 @@ export default function Navigation() {
     <div
       className={`navbar ${
         isOpen
-          ? "absolute bg-[#020c1f]  grid grid-cols-2 grid-rows-[1.5rem_1fr] transition-colors  duration-1000 top-0 left-0 h-screen w-full items-start  "
+          ? "absolute bg-[#020c1f]  grid grid-cols-2 grid-rows-[1.5rem_1fr] transition-colors  duration-1000 top-0 left-0 h-screen w-full z-10 items-start  "
           : "bg-[#020c1f]  grid grid-cols-2  justify-between items-center p-2 duration-900 ease-in-out text-white border-b border-[#a8bbdd57]"
       }   `}
     >
