@@ -7,17 +7,18 @@ import Footer from "./_components/Footer";
 export const metadata = {
   title: "Portfolio",
   description: "",
+  icon: 'icon.png'
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="max-md:text-[90%]">
-      <body className={`bg-[#020c1f] text-white h-full ${roboto.className} font-normal `}>
+    <html lang="en" className="max-md:text-[80%] ">
+      <body className={`bg-[#020c1f] text-white h-full ${roboto.className} font-normal overflowy-scroll `}>
         <div className="">
           <header className="">
             <Navigation />
           </header>
-          <main className="mt-5 w-[90%] m-[0_auto] font-light">{children}</main>
+          <main className="mt-5 w-[90%] m-[0_auto] font-light mb-[5rem] ">{children}</main>
           <Footer/>
         </div>
       </body>

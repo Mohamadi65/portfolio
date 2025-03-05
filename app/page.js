@@ -6,6 +6,10 @@ import ScrollIcons from "./_components/ScrollIcons";
 import Link from "next/link";
 import Button from "./_components/Button";
 
+ const metadata = {
+  title : "Portfolio"
+}
+
 export default function page() {
   return (
     <div>
@@ -31,9 +35,9 @@ export default function page() {
           {" "}
           Mes projets
         </Button>
-        <Button bgColor="bg-green-900" link="/contact">
+        <Button bgColor="bg-green-900" link="/about">
           {" "}
-          Me contacter
+          En savoir plus
         </Button>
       </p>
     </div>

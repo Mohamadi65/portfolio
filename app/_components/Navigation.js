@@ -89,12 +89,12 @@ export default function Navigation() {
             <li
               key={link.name}
               className={`${
-                pathname === link.href ? "text-[#46b3e2]" : ""
-              }  link transition-colors duration-500 hover:text-[#46b3e2] ${
+                pathname === link.href ? "hover:text-black" : ""
+              }  link transition-colors font-semibold text-[1.1rem] text-gray-300  md:text-[1.2rem] duration-200 hover:text-[#46b3e2] ${
                 isOpen ? "border-b border-[#a8bbdd57]  p-[0.5rem_0]" : ""
               } `}
             >
-              <Link
+              <Link className={`${pathname === link.href ? 'bg-[#3c93b9] text-gray-100 rounded-md px-1' : ''} `}
                 href={link.href}
                 {...(isOpen ? { onClick: handleClick } : {})}
               >

@@ -42,3 +42,16 @@ body {
 .scroll-icons {
   animation: scrollIcons 40s linear infinite;
 }
+
+@keyframes aboutOpacity {
+  from {
+    scale: 0.5; /* Départ hors écran à droite */
+  }
+  to {
+    scale: 1; /* Défilement vers la gauche */
+  }
+}
+
+.about-opacity{
+  animation: aboutOpacity 5s ease
+}
