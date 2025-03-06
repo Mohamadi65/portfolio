@@ -7,7 +7,7 @@ import { MdClose, MdComputer, MdMenu } from "react-icons/md";
 
 const navLinks = [
   {
-    name: "Acceuil",
+    name: "Accueil",
     href: "/",
   },
   {
@@ -49,6 +49,18 @@ export default function Navigation() {
   function handleClick() {
     setIsOpen((open) => !open);
   }
+
+  // Vérifier si le lien est actif
+  function isActive(link) {
+    if (pathname === "/") {
+      return link.href === "/" ? "bg-[#3c93b9] text-gray-100 rounded-md px-1" : "";
+    }
+    return pathname.startsWith(link.href) && link.href !== "/"
+      ? "bg-[#3c93b9] text-gray-100 rounded-md px-1"
+      : "";
+  }
+
+  
   return (
     <div
       className={`navbar ${
@@ -89,12 +101,12 @@ export default function Navigation() {
             <li
               key={link.name}
               className={`${
-                pathname === link.href ? "hover:text-black" : ""
+                pathname === link.href ? "" : ""
               }  link transition-colors font-semibold text-[1.1rem] text-gray-300  md:text-[1.2rem] duration-200 hover:text-[#46b3e2] ${
                 isOpen ? "border-b border-[#a8bbdd57]  p-[0.5rem_0]" : ""
               } `}
             >
-              <Link className={`${pathname === link.href ? 'bg-[#3c93b9] text-gray-100 rounded-md px-1' : ''} `}
+              <Link className={isActive(link)}
                 href={link.href}
                 {...(isOpen ? { onClick: handleClick } : {})}
               >

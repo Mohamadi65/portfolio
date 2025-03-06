@@ -5,15 +5,19 @@ import Photo from "./_components/Photo";
 import ScrollIcons from "./_components/ScrollIcons";
 import Link from "next/link";
 import Button from "./_components/Button";
+import { Suspense } from "react";
+import Spinner from "./_components/Spinner";
 
- const metadata = {
-  title : "Portfolio"
-}
+const metadata = {
+  title: "Portfolio",
+};
 
 export default function page() {
   return (
     <div>
-      <Photo />
+      <Suspense fallback={<Spinner />}>
+        <Photo />
+      </Suspense>
       <Accroche />
       {/* <p className="bg-slate-900 w-[80%] mx-auto border-radius flex text-center mt-5 rounded-md p-2 font-extralight">
         bienvenue dans mon univers digital. Développeur web autodidacte, je me
