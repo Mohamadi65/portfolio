@@ -16,7 +16,9 @@ export default {
       },
 
       fontFamily: {
-        roboto: ["var(--font-roboto)", ...fontFamily.sans], // Ajoutez Roboto
+        roboto: ["var(--font-roboto)", ...fontFamily.sans], 
+        caveat: ["var(--font-caveat)", ...fontFamily.sans],// Ajoutez Roboto
+        montserrat_Alternates: ["var(--font-montserrat_Alternates)", ...fontFamily.sans],// Ajoutez Roboto
       },
     },
   },

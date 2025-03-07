@@ -24,6 +24,11 @@ html {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -116,3 +121,13 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.container {
+  perspective: 1000px; /* Ajoute un effet de profondeur */
+}
+
+.rotateIdCard {
+  transform: rotateX(-40deg) rotateY(20deg) rotateZ(10deg); /* Inclinaison verticale */
+  transition: transform 0.5s ease-in-out;
+}
+
