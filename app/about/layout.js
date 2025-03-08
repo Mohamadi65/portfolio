@@ -1,6 +1,12 @@
 import React, { Suspense } from "react";
 import SideNavigation from "../_components/SideNavigation";
 import Spinner from "../_components/Spinner";
+import { Caveat } from "next/font/google";
+const caveat = Caveat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // Ajoute les poids nécessaires
+  variable: "--font-caveat", // Crée une variable CSS pour l'utiliser facilement
+});
 
 export default function RootLayout({ children }) {
   return (
@@ -9,7 +15,7 @@ export default function RootLayout({ children }) {
         <SideNavigation />
       </div>
       {/* <div className='bg-red-300' >Navigation</div> */}
-      <Suspense fallback={<Spinner />}>
+      <Suspense fallback={<Spinner  />} >
         <div className=" md:h-full w-full md:py-3 ">{children}</div>
       </Suspense>
     </div>
