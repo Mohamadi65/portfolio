@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
           <header className="">
             <Navigation />
           </header>
-          <main className="mt-5 w-[90%] m-[0_auto] font-light mb-[5rem] ">{children}</main>
+          <main className="mt-20 w-[90%] m-[0_auto] font-light mb-[5rem] ">{children}</main>
           <Footer/>
         </div>
       </body>

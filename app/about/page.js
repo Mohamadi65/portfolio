@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function page() {
   return (
-    <div className="md:min-w-[40%] md:max-w-[100%] md:p-3 p-2 md:rounded-md mx-auto mt-4 shadow-2xl bg-slate-900 flex flex-col about-opacity ">
+    <div className="md:min-w-[40%]  md:max-w-[100%] md:p-3 p-2 md:rounded-md mx-auto mt-4 shadow-2xl bg-slate-900 flex flex-col about-opacity ">
       <span className="font-bold text-[1.3rem] mb-3   text-center bg-slate-800   ">
         À propos de moi 🚀
       </span>

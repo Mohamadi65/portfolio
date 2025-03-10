@@ -17,7 +17,7 @@ export default function Navigation() {
   }, [menuOpen]);
 
   return (
-    <nav className="bg-[#020c1f] text-white fixed top-0 w-full p-4 border-b border-[#042460d2] transition-all">
+    <nav className="bg-[#020c1f]  text-white fixed  top-0 w-full p-4 border-b border-[#042460d2] transition-all">
       <div className="flex justify-between items-center">
         <span className="text-xl font-bold flex items-center">
           <MdDevices className="text-[#46b3e2] text-2xl" />

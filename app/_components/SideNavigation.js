@@ -46,7 +46,7 @@ const navLinks = [
 
 export default function SideNavigation() {
   const pathname = usePathname();
-  return <div className="">
+  return <div className={`md:fixed`}>
      <ul  className="flex md:flex-col gap-4  text-nowrap ">
         {navLinks.map(link => (
           <li key={link.name}>
