@@ -132,7 +132,7 @@ export default function page() {
       <div className="bg-slate-900 max-w-[100%]  mx-auto px-2 rounded-[5px]">
         {parcours.map((parcour) => (
           <div key={parcour.titre} className="py-5">
-            <p className="text-center font-semibold text-gray-300 tracking-[0.1rem] mb-5">
+            <p className="text-center font-semibold text-gray-300 tracking-[0.1rem] bg-slate-800 mb-5">
               {parcour.titre}{" "}
               <span
                 className={`${caveat.variable} font-caveat text-purple-400`}
@@ -183,33 +183,39 @@ export default function page() {
                 <Span textColor="text-blue-300" text={parcour.abbr} />
               </Link>
             </div>
-            {/* COMPETENCES ACQUISES */}
-            <div className=" mt-4">
-              <span className="text-gray-400 font-semibold  rounded-sm px-1 bg-slate-800">
-                Compétences acquises
-              </span>
-              <div className="flex flex-col mt-5">
-                {parcour.competences.map((competence, i) => (
-                  <div
-                    key={i}
-                    className=" flex gap-2 max-xl:gap-0 text-[0.9rem] max-xl:flex-col xl:flex-row   mb-1"
-                  >
-                    <div className=" flex gap-2 xl:items-center">
-                      <BsCheckSquareFill className="text-blue-300 text-[1rem] " />
-                      <span className={`text-blue-300 flex  `}>
-                        {" "}
-                        {competence.nom}{" "} {competence.commentaire ? ':' : ""}
-                      </span>{" "}
-                    </div>
-                    <span className={`max-xl:ml-6`}>
-                      {competence.commentaire
-                        ? `${competence.commentaire}`
-                        : ""}
-                    </span>{" "}
+            {/* COMPETENCES ACQUISES et MATIERES CLES */}
+            <div className=" mt-4 ">
+              <div className={` grid grid-cols-[1fr] `}>
+                {/* COMPETENCES ACQUISES */}
+                <div>
+                  <span className="text-white font-light rounded-sm px-1 bg-slate-800   cursor-pointer shadow-[0_0_10px_00px_rgba(255,255,255,0.5)]">
+                    Compétences acquises
+                  </span>
+                  <div className="flex flex-col mt-5 ">
+                    <Competences parcour={parcour}/>
                   </div>
-                ))}
+                </div>
+                {/* FIN COMPETENCES ACQUISES */}
+
+                {/* DEBUT MATIERES CLES */}
+                <div className=" mt-5">
+                  <span className="text-white font-light rounded-sm px-1 bg-slate-800 shadow-[0_0_10px_00px_rgba(255,255,255,0.5)] ">
+                    Matières clés
+                  </span>
+                  {/* Contenu matière clés */}
+                  <div className="flex flex-col mt-5 ">
+                    {/* {parcour.matieres.map((matiere,i)=> {
+                      <span key={i} className="text-white">{i}</span>
+                    } )} */}
+
+                    <Matieres parcour={parcour} />
+                  </div>
+                  {/* Fin contenu matière clés */}
+                </div>
+                {/* FIN MATIERES CLES */}
               </div>
             </div>
+            {/* FIN COMPETENCES */}
           </div>
         ))}
       </div>
@@ -229,4 +235,49 @@ function SpanVariable({ textColor = "text-gray-300", text }) {
       {text}
     </span>
   );
+}
+
+function Matieres({ parcour }) {
+  return (
+    <div className="">
+      {parcour.matieres.map((matiere, i) => (
+        <div
+          key={i}
+          className=" flex gap-2 max-xl:gap-0 text-[0.9rem] max-xl:flex-col xl:flex-row   mb-1"
+        >
+          <div className=" flex gap-2 ">
+            <BsCheckSquareFill className="text-[#aec1c17d] text-[1rem] " />
+            <span className={`text-[#e9eced] flex  `}> {matiere}</span>{" "}
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function Competences({parcour}) {
+  return ( <div>
+
+  
+    {parcour.competences.map((competence, i) => (
+      <div
+        key={i}
+        className=" flex gap-2 max-xl:gap-0 text-[0.9rem] max-xl:flex-col xl:flex-row   mb-1"
+      >
+        <div className=" flex gap-2 xl:items-center">
+          <BsCheckSquareFill className="text-[#aec1c17d] text-[1rem] " />
+          <span className={`text-[#e9eced] flex  `}>
+            {" "}
+            {competence.nom} {competence.commentaire ? ":" : ""}
+          </span>{" "}
+        </div>
+        <span className={`max-xl:ml-6 text-[#909596]`}>
+          {competence.commentaire
+            ? `${competence.commentaire}`
+            : ""}
+        </span>{" "}
+      </div>
+    ))}
+    </div>
+  )
 }
