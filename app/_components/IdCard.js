@@ -14,7 +14,7 @@ const caveat = Caveat({
 });
 const montserrat_Alternates = Montserrat_Alternates({
   subsets: ["latin"],
-  weight: ["100","200","300", "400", "500", "600", "700", "800", "900"], // Ajoute les poids nécessaires
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], // Ajoute les poids nécessaires
   variable: "--font-montserrat_Alternates", // Crée une variable CSS pour l'utiliser facilement
 });
 
@@ -25,27 +25,27 @@ export default function IdCard() {
         <Image
           src={photo}
           alt="Mohamadi Zongo"
-          
           quality={100}
           className=" "
           width="100%"
           height="100%"
         />
       </div>
-      <div
-        className={` text-gray-200  text-[1.4rem] flex flex-col gap-2`}
-      >
-        <span className={ `text-gray-100 ${caveat.variable} font-caveat tracking-[0.2rem]`}>Mohamadi Zongo</span>
+      <div className={` text-gray-200  text-[1.4rem] flex flex-col gap-2`}>
+        <span
+          className={`text-gray-100 ${caveat.variable} font-caveat tracking-[0.2rem]`}
+        >
+          Mohamadi Zongo
+        </span>
         <div className="flex flex-col gap-2">
-
-        <p className="  text-[0.8rem] flex gap-2 items-center ">
-        <MdEmail className="text-purple-500" />
-          <span className="">mohamadi.zongo115@gmail.com</span>
-        </p>
-        <p className="text-[0.8rem] flex gap-2 items-center">
-        <FaMapMarkerAlt className="text-purple-500" />
-          <span className="">11000 carcassonne, France</span>
-        </p>
+          <p className="  text-[0.8rem] flex gap-2 items-center ">
+            <MdEmail className="text-purple-500" />
+            <span className="">mohamadi.zongo115@gmail.com</span>
+          </p>
+          <p className="text-[0.8rem] flex gap-2 items-center">
+            <FaMapMarkerAlt className="text-purple-500" />
+            <span className="">11000 carcassonne, France</span>
+          </p>
         </div>
       </div>
     </div>

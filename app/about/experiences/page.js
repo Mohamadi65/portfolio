@@ -1,7 +1,20 @@
-import React from 'react'
+import TextExpander, { ContentExpander } from "@/app/_components/TextExpander";
+import { experiences } from "@/app/_data/Experiences";
+
+export const metadata = {
+  title: "les Expériences de Mohamadi Zongo",
+  description:
+    "Cette page relate les expériences intéressantes de Monsieur Zongo Mohamadi",
+};
 
 export default function page() {
   return (
-    <div>Expériences</div>
-  )
+    <div>
+      <TextExpander texte="Je suis développeur web et analyste de donnée" />
+      {experiences.map((data,i )=> (
+        <ContentExpander key={i}  data={data} />
+      ))}
+      
+    </div>
+  );
 }
