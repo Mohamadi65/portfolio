@@ -1,3 +1,5 @@
+import { DetailsExperiences } from "@/app/_components/_experiences/DetailsExperiences";
+import FullscreenDetails from "@/app/_components/FullscreenDetails";
 import TextExpander, { ContentExpander } from "@/app/_components/TextExpander";
 import { experiences } from "@/app/_data/Experiences";
 
@@ -12,8 +14,10 @@ export default function page() {
     <div>
       <TextExpander texte="Je suis développeur web et analyste de donnée" />
       {experiences.map((data,i )=> (
-        <ContentExpander key={i}  data={data} />
+        <DetailsExperiences key={i}  data={data} />
       ))}
+
+     
       
     </div>
   );
