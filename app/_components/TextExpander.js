@@ -59,7 +59,7 @@ export function ContentExpander({ data }) {
               <Span text={data.pays} textColor="white" />
               {data.pays === "France" ? (
                 <Image
-                width={25}
+                  width={25}
                   src={france}
                   alt="drapeau du Burkina Faso"
                   quality={100}
@@ -67,7 +67,7 @@ export function ContentExpander({ data }) {
                 />
               ) : (
                 <Image
-                width={25}
+                  width={25}
                   src={burkina}
                   alt="drapeau de France"
                   quality={100}

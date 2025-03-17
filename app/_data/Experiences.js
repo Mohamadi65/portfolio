@@ -21,58 +21,58 @@ export const experiences = [
         {
           titre: "Absence de logiciel dédié",
           contenu:
-            "Pas de système centralisé pour stocker et gérer les données",
+           ["Pas de système centralisé pour stocker et gérer les données"],
         },
         {
           titre: "Dispersion des informations",
           contenu:
-            "Données réparties entre fiches papier et fichiers Excel mal structurés, rendant la gestion complexe",
+            ["Données réparties entre fiches papier et fichiers Excel mal structurés, rendant la gestion complexe"],
         },
         {
           titre: "Difficulté d'exploitation des données",
           contenu:
-            "Impossible d'extraire facilement des informations pertinentes",
+            ["Impossible d'extraire facilement des informations pertinentes"],
         },
         {
           titre: "Analyse statistique limitée",
           contenu:
-            "Données non structurées, compliquant l’élaboration de statistiques fiables",
+            ["Données non structurées, compliquant l’élaboration de statistiques fiables"],
         },
         {
           titre: "Prise de décision entravée",
           contenu:
-            "Manque d'informations actualisées et précises pour orienter les actions de l'association",
+            ["Manque d'informations actualisées et précises pour orienter les actions de l'association"],
         },
         {
           titre: "Risques d'erreurs et de pertes de données",
           contenu:
-            "Documents papier sujets à la dégradation ou à la perte, fichiers Excel pouvant être corrompus ou mal remplis",
+            ["Documents papier sujets à la dégradation ou à la perte, fichiers Excel pouvant être corrompus ou mal remplis"],
         },
         {
           titre: "Absence d'automatisation",
           contenu:
-            "Toutes les tâches sont réalisées manuellement, entraînant une perte de temps et une inefficacité accrue",
+           [ "Toutes les tâches sont réalisées manuellement, entraînant une perte de temps et une inefficacité accrue"],
         },
         {
           titre: "Difficulté d'accès aux données",
           contenu:
-            "Pas de système en ligne permettant un accès rapide et sécurisé aux informations",
+            ["Pas de système en ligne permettant un accès rapide et sécurisé aux informations"],
         },
         {
           titre: "Incapacité à faire des prévisions",
           contenu:
-            "Aucune solution permettant d'analyser les tendances et d'anticiper les évolutions des déplacements internes",
+            ["Aucune solution permettant d'analyser les tendances et d'anticiper les évolutions des déplacements internes"],
         },
         {
           titre: "Sécurité et confidentialité compromises",
           contenu:
-            "Données sensibles exposées à des accès non contrôlés, augmentant le risque de fuite ou de manipulation",
+            ["Données sensibles exposées à des accès non contrôlés, augmentant le risque de fuite ou de manipulation"],
         },
       ],
     },
     action: {
       titre:
-        "Face à cette problématique, la nécessité d'une solution informatique performante s'impose. L'objectif est de concevoir et développer une application web Full-Stack intégrant une base de données relationnelle, afin de :",
+        "Face à cette problématique, la nécessité d'une solution informatique performante s'impose. L'objectif est de concevoir et développer une application web Full-Stack intégrant une base de données relationnelle",
       objectifs: [
         {
           titre: "Centraliser et structurer les données",
@@ -206,17 +206,17 @@ export const experiences = [
         {
           titre: "Contraintes de déplacement",
           contenu:
-            " obligeant les clients à se rendre en gare pour réserver un billet",
+            [" obligeant les clients à se rendre en gare pour réserver un billet"],
         },
         {
           titre: "Lignes téléphoniques souvent saturées",
           contenu:
-            "entraînant des temps d’attente longs et des échanges inefficaces",
+            ["entraînant des temps d’attente longs et des échanges inefficaces"],
         },
         {
           titre: "Dispersion des informations",
           contenu:
-            "sur les horaires et tarifs, accessibles uniquement en gare ou sur différents canaux (réseaux sociaux, WhatsApp, Facebook)",
+            ["sur les horaires et tarifs, accessibles uniquement en gare ou sur différents canaux (réseaux sociaux, WhatsApp, Facebook)"],
         },
       ],
     },
@@ -345,78 +345,78 @@ export const experiences = [
   // FIN AKILISOFT
 
   //  DEBUT ARTERRIS
-  {
-    type: "travail",
-    categorie: "secondaire",
-    annee: "2024",
-    nbrMois: "5",
-    ville: "Alzonne",
-    pays: "France",
-    entreprise: "Arterris",
-    rapportStage: "",
-    infosEntreprise:
-      "Arterris est une coopérative agricole présente dans une grande partie du sud de la France (régions Occitanie et Provence-Alpes-Côte d'Azur) et basée à Castelnaudary. Elle compte environ 2300 collaborateurs",
-    poste: "Manutentionnaire Saisonnier",
+  // {
+  //   type: "travail",
+  //   categorie: "secondaire",
+  //   annee: "2024",
+  //   nbrMois: "5",
+  //   ville: "Alzonne",
+  //   pays: "France",
+  //   entreprise: "Arterris",
+  //   rapportStage: "",
+  //   infosEntreprise:
+  //     "Arterris est une coopérative agricole présente dans une grande partie du sud de la France (régions Occitanie et Provence-Alpes-Côte d'Azur) et basée à Castelnaudary. Elle compte environ 2300 collaborateurs",
+  //   poste: "Manutentionnaire Saisonnier",
 
-    missions: [
-      {
-        titre: "Effeuilleur",
-        contenu: [
-          "de la prise et du passage de consignes en début et en fin de poste, du tri et du contrôle quantitatif et/ou qualitatif du maïs, du nettoyage du poste de travail",
-        ],
-      },
-      {
-        titre: "Analyste",
-        contenu: [
-          "récupération des échantillons au point qualité afin de procéder aux analyses( fusariés, abîmés, cassés, PMG, impuretés) afin de corriger les réglages en fonction de l'analyse, si besoin. Utisation de Excel",
-        ],
-      },
-      {
-        titre: "Cariste",
-        contenu: [
-          `Utiliser des chariots élévateurs pour déplacer les containeurs remplis de maïs vers les zones de stockage appropriées, en respectant les procédures derangement et en optimisant l'espace disponible`,
-        ],
-      },
-    ],
-  },
+  //   missions: [
+  //     {
+  //       titre: "Effeuilleur",
+  //       contenu: [
+  //         "de la prise et du passage de consignes en début et en fin de poste, du tri et du contrôle quantitatif et/ou qualitatif du maïs, du nettoyage du poste de travail",
+  //       ],
+  //     },
+  //     {
+  //       titre: "Analyste",
+  //       contenu: [
+  //         "récupération des échantillons au point qualité afin de procéder aux analyses( fusariés, abîmés, cassés, PMG, impuretés) afin de corriger les réglages en fonction de l'analyse, si besoin. Utisation de Excel",
+  //       ],
+  //     },
+  //     {
+  //       titre: "Cariste",
+  //       contenu: [
+  //         `Utiliser des chariots élévateurs pour déplacer les containeurs remplis de maïs vers les zones de stockage appropriées, en respectant les procédures derangement et en optimisant l'espace disponible`,
+  //       ],
+  //     },
+  //   ],
+  // },
 
   // FIN ARTERRIS
 
   // DEBUT MCDONALDS
-  {
-    type: "travail",
-    categorie: "secondaire",
-    annee: "2023",
-    nbrMois: "7",
-    ville: "Carcassonne",
-    pays: "France",
-    entreprise: "McDonald's",
-    rapportStage: "",
-    infosEntreprise: "",
-    poste: "Equipier polyvalent",
+  // {
+  //   type: "travail",
+  //   categorie: "secondaire",
+  //   annee: "2023",
+  //   nbrMois: "7",
+  //   ville: "Carcassonne",
+  //   pays: "France",
+  //   entreprise: "McDonald's",
+  //   rapportStage: "",
+  //   infosEntreprise: "",
+  //   poste: "Equipier polyvalent",
 
-    missions: [
-      {
-        titre: "Service à la clientèle",
-        contenu: [
-          "au comptoir, en salle ou en cuisine, la mission première del'équipier est de satisfaire le client en l'accueillant et le servant",
-        ],
-      },
-      {
-        titre:
-          "Maintenir propre, approvisionnées et en bon état de fonctionnementl'ensemble des zones du restaurant",
-        contenu: [
-          "Montage et démontage des équipements,nettoyage et aseptisation",
-        ],
-      },
-      {
-        titre: `Préparation des produits McDonald's`,
-        contenu: [
-          `( frites, garniture des sandwichs, cuissondes viandes, préparation des salades...) conformément aux fi ches de contrôle deposte et en respectant les normes d'hygiène de sécurité, de qualité et de service del'Enseigne`,
-        ],
-      },
-    ],
-  },
+  //   missions: [
+  //     {
+  //       titre: "Service à la clientèle",
+  //       contenu: [
+  //         "au comptoir, en salle ou en cuisine, la mission première del'équipier est de satisfaire le client en l'accueillant et le servant",
+  //       ],
+  //     },
+  //     {
+  //       titre:
+  //         "Maintenir propre, approvisionnées et en bon état de fonctionnementl'ensemble des zones du restaurant",
+  //       contenu: [
+  //         "Montage et démontage des équipements,nettoyage et aseptisation",
+  //       ],
+  //     },
+  //     {
+  //       titre: `Préparation des produits McDonald's`,
+  //       contenu: [
+  //         `( frites, garniture des sandwichs, cuissondes viandes, préparation des salades...) conformément aux fi ches de contrôle deposte et en respectant les normes d'hygiène de sécurité, de qualité et de service del'Enseigne`,
+  //       ],
+  //     },
+  //   ],
+  // },
 
   // FIN MCDONALDS
 ];

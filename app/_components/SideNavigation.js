@@ -46,7 +46,7 @@ const navLinks = [
 
 export default function SideNavigation() {
   const pathname = usePathname();
-  return <div className={`md:fixed`}>
+  return <div className={`md:fixed   flex flex-col justify-between h-[80%]`}>
      <ul  className="flex md:flex-col gap-4  text-nowrap ">
         {navLinks.map(link => (
           <li key={link.name}>
@@ -54,5 +54,7 @@ export default function SideNavigation() {
           </li>
         ))}
      </ul>
+
+     {/* { pathname === '/about/parcoursScolaire' && <p className="max-md:hidden mb-[20%]" >Je suis be</p> } */}
   </div>;
 }
