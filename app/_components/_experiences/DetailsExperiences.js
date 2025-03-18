@@ -15,6 +15,7 @@ import { useState } from "react";
 import ListesTitreContent from "./ListesTitreContent";
 import Expander from "../Expander";
 import { useEffect } from "react";
+import ListesTechnologiesContent from "../ListesTechnologiesContent";
 
 export function DetailsExperiences({ data }) {
   // console.log(data);
@@ -174,29 +175,48 @@ function ShowData({ data, setIsOpen }) {
             </Expander>
           </div>
           <div className="">
-          <Expander titre={"Problématique"}>
+          <Expander titre={"Problématique du projet"}>
               <p className="text-justify text-[#f4f4f5bd]">
                 {data.problematique.titre}
               </p>
             </Expander>
-            {/* <span className="text-center">Problématique</span>
-            <span>:</span>
-            <p className="text-justify text-[#f4f4f5bd]">
-              {data.problematique.titre}
-            </p> */}
+          
           </div>
         </div>
         {/* Les limites */}
         <div className=" limites">
-          <Expander titre={"Les limites"}>
+          <Expander titre={"Les limites du projet"}>
             <ListesTitreContent data={data.problematique.limites} />
           </Expander>
         </div>
         {/* Les objectifs */}
         <div className="objectif mt-5">
           <p className="text-[#f4f4f5bd] mb-5">{data.action.titre}</p>
-          <Expander titre={"Les objectifs"}>
+          <Expander titre={"Les objectifs du projet"}>
             <ListesTitreContent data={data.action.objectifs} />
+          </Expander>
+        </div>
+
+        {/* Les missions */}
+        <div className="missions mt-5">
+          
+          <Expander titre={"Les missions du projet"}>
+            <ListesTitreContent data={data.missions} />
+          </Expander>
+        </div>
+
+        {/* Les technologies */}
+        <div className="technologies mt-5">
+          
+          <Expander titre={"Les technologies utilisées"}>
+            <ListesTechnologiesContent dataTech={data.technologies} />
+          </Expander>
+        </div>
+        {/* Conclusion */}
+        <div className="conclusion mt-5">
+          
+          <Expander titre={"conclusion"}>
+            <p>{data.conclusion}</p>
           </Expander>
         </div>
       </div>

@@ -12,13 +12,10 @@ export const metadata = {
 export default function page() {
   return (
     <div>
-      <TextExpander texte="Je suis développeur web et analyste de donnée" />
-      {experiences.map((data,i )=> (
-        <DetailsExperiences key={i}  data={data} />
+      {/* <TextExpander texte="Je suis développeur web et analyste de donnée" /> */}
+      {experiences.map((data, i) => (
+        <DetailsExperiences key={i} data={data} />
       ))}
-
-     
-      
     </div>
   );
 }
