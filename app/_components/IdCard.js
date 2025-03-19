@@ -18,9 +18,11 @@ const montserrat_Alternates = Montserrat_Alternates({
   variable: "--font-montserrat_Alternates", // Crée une variable CSS pour l'utiliser facilement
 });
 
+// hover:animate-pulse
+// from-purple-800 via-indigo-800 to-blue-800
 export default function IdCard() {
   return (
-    <div className="transition-all  container rotateIdCard cursor-pointer hover:animate-pulse my-5   hover:-rotate-0 rotate-z-45 duration-300 hover:shadow-2xl  shadow-[0_0_100px_50px_rgba(255,255,255,0.1)] transform hover:-translate-y-2 bg-gradient-to-r from-purple-800 via-indigo-800 to-blue-800 w-[25rem] h-[10rem] rounded-lg  mx-auto flex gap-5 p-5 ">
+    <div className="transition-all  container rotateIdCard cursor-pointer  my-5   hover:-rotate-0 rotate-z-45 duration-300 hover:shadow-2xl  shadow-[0_0_100px_50px_rgba(255,255,255,0.1)] transform hover:translate-y-2 bg-gradient-to-r from-slate-900 via-indigo-800 to-blue-800 w-[25rem] h-[10rem] rounded-lg  mx-auto flex gap-5 p-5 ">
       <div className=" w-[6.25rem] h-[6.25rem]  overflow-hidden rounded-full border  border-[#789dbc5d]">
         <Image
           src={photo}

@@ -25,10 +25,12 @@ export default function page() {
         <SpanVariable text={"Certifications"} />
       </div>
 
-      <div className=" flex gap-10 max-lg:flex-col">
-        {certifications.map((data, i) => (
-          <CardCertifications key={i} data={data} />
-        ))}
+      <div className=" flex justify-center">
+        <div className=" mb-10 flex gap-10 ">
+          {certifications.map((data, i) => (
+            <CardCertifications key={i} data={data} />
+          ))}
+        </div>
       </div>
     </div>
   );

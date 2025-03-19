@@ -18,7 +18,7 @@ export const metadata = {
 export default function page() {
   
   return (
-    <div className="md:min-w-[40%]  md:max-w-[100%] md:p-3 p-2 md:rounded-md mx-auto mt-4 shadow-2xl bg-slate-900 flex flex-col about-opacity ">
+    <div className="md:min-w-[40%]   md:max-w-[100%] md:p-3 p-2 md:rounded-md mx-auto mt-4 shadow-2xl bg-slate-900 flex flex-col about-opacity ">
       <span className="font-bold text-[1.3rem] mb-3   text-center bg-slate-800   ">
         À propos de moi 🚀
       </span>
@@ -26,8 +26,7 @@ export default function page() {
       <Titre titre="Du curieux au développeur passionné" />
 
       <Storytelling>
-        Salut, moi c&apos;est{" "}
-        <span className="font-bold text-[#3c93b9] ">Mohamadi Zongo. </span>
+       
         Depuis toujours, j’ai été fasciné par le digital et la manière dont la
         technologie façonne notre quotidien. Mais c’est en découvrant le
         développement web que j’ai trouvé ma véritable passion. Mon parcours n’a
@@ -43,7 +42,7 @@ export default function page() {
         sortant des sentiers battus que j’ai le plus appris. J’ai complété mon
         parcours avec des certifications en développement web et des formations
         en ligne, me spécialisant dans des technologies modernes comme{" "}
-        <span className="font-normal text-[#3c93b9] text-[0.9rem]">
+        <span className="font-normal text-slate-200 text-[1rem]">
           React js, Next js, Laravel
         </span>
         ... . Aujourd’hui, je continue à me former au quotidien pour repousser
@@ -64,7 +63,7 @@ export default function page() {
         explication="Code propre, structuré et optimisé pour la performance"
       />
 
-      <p className="text-[0.8rem] mt-2">
+      <p className="text-[1rem] mt-2">
         {" "}
         Je suis toujours à la recherche de nouveaux défis et de collaborations
         enrichissantes. Si vous voulez en savoir plus, n’hésitez pas{" "}

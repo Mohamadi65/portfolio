@@ -24,7 +24,7 @@ export default function page() {
         forme en continu pour repousser les limites du web.
       </p> */}
 
-      <p className="bg-slate-900 w-[80%] mx-auto text-center mt-5 rounded-md p-4 font-light text-gray-200 leading-relaxed ">
+      <p className="bg-slate-900 w-[80%] md:text-[1.5rem] mx-auto text-center mt-5 rounded-md p-4 font-light text-gray-200 leading-relaxed ">
         <span className="text-[#81BFDA] font-semibold">Bienvenue</span> dans mon
         univers digital. Développeur web{" "}
         <span className="text-green-400 font-bold">autodidacte</span>, je me
@@ -34,7 +34,7 @@ export default function page() {
 
       <ScrollIcons />
 
-      <p className=" mt-[8rem]  flex gap-5 justify-center items-center max-w-[70%] mx-auto">
+      <p className=" mt-[8rem] md:text-[1.5rem]  flex gap-5 justify-center items-center max-w-[70%] mx-auto">
         <Button bgColor="bg-slate-700" textColor="text-[#81BFDA]" link="/">
           {" "}
           Mes projets
