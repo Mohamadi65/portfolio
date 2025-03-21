@@ -2,7 +2,6 @@ import Image from "next/image";
 import { projets } from "../_data/Projets";
 import { FaExternalLinkAlt, FaGithub, FaInfoCircle } from "react-icons/fa";
 import Link from "next/link";
-import Cta from "../_components/Cta";
 
 export const metadata = {
   title: "Les projets de Mohamadi Zongo",
@@ -12,14 +11,14 @@ export const metadata = {
 export default function page() {
   return (
     <>
-    <Cta/>
-      {/* <p className="bg-slate-900 w-[80%] md:text-[1.5rem] mx-auto text-center mt-5 rounded-md p-4 font-light text-gray-200 leading-relaxed ">
+    
+      <p className="bg-slate-900 w-[80%] md:text-[1.5rem] mx-auto text-center mt-5 rounded-md p-4 font-light text-gray-200 leading-relaxed ">
        <span className="text-[#81BFDA] font-semibold"> Ce site </span> a été
         développé avec
         <span className="text-green-400 font-bold ml-1">Next.js</span> et{" "}
         <span className="text-green-400 font-bold ml-1">Tailwind css</span> et est 100% <span className="text-[#81BFDA] font-semibold">responsive</span>
 
-      </p> */}
+      </p>
       <div className="grid relative gap-5 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] mt-8 ">
         {projets.map((projet, i) => (
           <div
