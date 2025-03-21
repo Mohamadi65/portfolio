@@ -141,7 +141,7 @@ function ShowData({ data, setIsOpen }) {
           <CenterElementDiv>
             <SpanVariable textColor="text-gray-400" text="Nbre Mois" />
             <span>:</span>
-            <span>Plus de</span>
+           
             <Span text={data.nbrMois} textColor="white" />
           </CenterElementDiv>
 
