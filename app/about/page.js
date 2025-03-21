@@ -10,9 +10,9 @@ import Link from "next/link";
 import IdCard from "../_components/IdCard";
 import { useFullscreen } from "../_context/FullscreenContext";
 export const metadata = {
-  title: "À propos de moi 🚀",
+  title: "À propos de Mohamadi Zongo 🚀",
   description:
-    "Découvrez mon parcours, mes compétences et ma passion pour le développement web.",
+    "Découvrez mon parcours, mes compétences et ma passion pour le développement web",
 };
 
 export default function page() {

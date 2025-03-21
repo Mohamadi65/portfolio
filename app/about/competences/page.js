@@ -21,17 +21,17 @@ export default function page() {
         </Expander>
       ))}
 
-      <div className="text-center mb-6">
+      {/* <div className="text-center mb-6">
         <SpanVariable text={"Certifications"} />
-      </div>
-
+      </div> */}
+{/* 
       <div className=" flex justify-center">
         <div className=" mb-10 flex gap-10 ">
           {certifications.map((data, i) => (
             <CardCertifications key={i} data={data} />
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

@@ -1,4 +1,54 @@
 export const parcours = [
+  
+  {
+    titre: "🎓 BUT Science des données",
+    universite: "Université de perpignan Via Domitia",
+    lienUniversite:
+      "https://formations.univ-perp.fr/diplome/but/but-science-des-donnees",
+    pays: "France",
+    drapeau: {
+      src: "https://flagcdn.com/w40/fr.png",
+      alt: "Drapeau de la France",
+    },
+    domaine: "Science des données",
+    abbr: "SD",
+    ville: "Carcassonne",
+    annee: 2023,
+    competences: [
+      {
+        nom: "Traitement et gestion des données",
+        commentaire:
+          "Insertion, modification, extraction et suppression des données",
+      },
+      {
+        nom: "Analyse statistique",
+        commentaire:
+          "Mise en évidence des tendances et informations clés adaptées aux besoins décisionnels",
+      },
+      {
+        nom: "Valorisation des résultats",
+        commentaire:
+          "Interprétation et contextualisation des données pour une restitution professionnelle",
+      },
+      {
+        nom: "Développement d’outils décisionnels",
+        commentaire:
+          "Création de solutions de visualisation et structuration des données adaptées",
+      },
+    ],
+    matieres: [
+      "Bases de données relationnelles",
+      "Programmation (bases, statistique, automatisée)",
+      "Statistique (descriptive, inférentielle, tests d'hypothèses)",
+      "Mathématiques (analyse, algèbre, probabilités)",
+      "Datavisualisation et reporting",
+      "Systèmes d'information décisionnels",
+      "Traitement de données SIG",
+      "Méthodes factorielles et classification automatique",
+      "Communication et valorisation des données",
+      "Anglais professionnel et scientifique",
+    ],
+  },
   {
     titre: "🎓 Licence en Ingénierie des Systèmes d'Information",
     universite: "École Supérieure d'Informatique",
@@ -58,55 +108,6 @@ export const parcours = [
       "Sécurité informatique",
       "Développement d'applications client/serveur",
       "Conception et gestion de projets informatiques",
-    ],
-  },
-  {
-    titre: "🎓 BUT Science des données",
-    universite: "Université de perpignan Via Domitia",
-    lienUniversite:
-      "https://formations.univ-perp.fr/diplome/but/but-science-des-donnees",
-    pays: "France",
-    drapeau: {
-      src: "https://flagcdn.com/w40/fr.png",
-      alt: "Drapeau de la France",
-    },
-    domaine: "Science des données",
-    abbr: "SD",
-    ville: "Carcassonne",
-    annee: 2023,
-    competences: [
-      {
-        nom: "Traitement et gestion des données",
-        commentaire:
-          "Insertion, modification, extraction et suppression des données",
-      },
-      {
-        nom: "Analyse statistique",
-        commentaire:
-          "Mise en évidence des tendances et informations clés adaptées aux besoins décisionnels",
-      },
-      {
-        nom: "Valorisation des résultats",
-        commentaire:
-          "Interprétation et contextualisation des données pour une restitution professionnelle",
-      },
-      {
-        nom: "Développement d’outils décisionnels",
-        commentaire:
-          "Création de solutions de visualisation et structuration des données adaptées",
-      },
-    ],
-    matieres: [
-      "Bases de données relationnelles",
-      "Programmation (bases, statistique, automatisée)",
-      "Statistique (descriptive, inférentielle, tests d'hypothèses)",
-      "Mathématiques (analyse, algèbre, probabilités)",
-      "Datavisualisation et reporting",
-      "Systèmes d'information décisionnels",
-      "Traitement de données SIG",
-      "Méthodes factorielles et classification automatique",
-      "Communication et valorisation des données",
-      "Anglais professionnel et scientifique",
     ],
   },
 ];
