@@ -11,13 +11,22 @@ export const metadata = {
 export default function page() {
   return (
     <>
-    
       <p className="bg-slate-900 w-[80%] md:text-[1.5rem] mx-auto text-center mt-5 rounded-md p-4 font-light text-gray-200 leading-relaxed ">
-       <span className="text-[#81BFDA] font-semibold"> Ce site </span> a été
+        <span className="text-[#81BFDA] font-semibold"> Ce site </span> a été
         développé avec
         <span className="text-[#81BFDA] font-bold ml-1">Next.js</span> et{" "}
-        <span className="text-[#81BFDA] font-bold ml-1">Tailwind css</span> et est 100% <span className="text-[#81BFDA] font-semibold">responsive</span>
-
+        <span className="text-[#81BFDA] font-bold ml-1">Tailwind css</span> et
+        est 100%{" "}
+        <span className="text-[#81BFDA] font-semibold">responsive.</span> {" "}
+        <span>
+        <Link href="https://github.com/Mohamadi65/portfolio.git" className="hover:underline">
+          {" "}
+          <span>Lien
+          github de ce projet : </span>
+          <FaGithub className="inline-flex" />
+        </Link>
+        </span>
+        
       </p>
       <div className="grid relative gap-5 grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] mt-8 ">
         {projets.map((projet, i) => (
