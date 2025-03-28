@@ -12,7 +12,7 @@ export default function page() {
   return (
     <div>
       <div className="text-center mb-6">
-        <SpanVariable text={"Compétences Techniques et Fonctionnelles"} />
+        <SpanVariable text={"Technical and Functional Skills"} />
       </div>
 
       {competences.map((data, i) => (

@@ -7,7 +7,7 @@ export default function Accroche() {
       <span className="text-[#81BFDA]">
         <Typewriter
           words={[
-            "Code, créativité et innovation "
+            "Code, Creativity & Innovation "
           ]}
           loop={true} // La phrase ne se répète pas en boucle
           cursor

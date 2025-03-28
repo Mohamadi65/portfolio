@@ -47,11 +47,11 @@ export default function page() {
           link="/projets"
         >
           {" "}
-          Mes projets
+          My projects
         </Button>
         <Button bgColor="bg-green-900" link="/about">
           {" "}
-          En savoir plus
+          Learn more
         </Button>
       </p>
     </div>

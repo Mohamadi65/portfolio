@@ -13,22 +13,22 @@ import {
 
 const navLinks = [
   {
-    name: "À propos de moi",
+    name: "About me",
     href: "/about",
     icon: <BsPersonCheckFill />,
   },
   {
-    name: "Compétences",
+    name: "Skills",
     href: "/about/competences",
     icon: <BsFire />,
   },
   {
-    name: "Parcours scolaires",
+    name: "School careers",
     href: "/about/parcoursScolaire",
     icon: <BsFillMortarboardFill />,
   },
   {
-    name: "Expériences",
+    name: "Experiences",
     href: "/about/experiences",
     icon: <BsFillLayersFill />,
   },
@@ -38,7 +38,7 @@ const navLinks = [
   //   icon: <BsFillLayersFill />,
   // },
   {
-    name: "Loisirs",
+    name: "Hobbies",
     href: "/about/loisirs",
     icon: <BsHandThumbsUpFill />,
   },

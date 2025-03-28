@@ -22,7 +22,7 @@ export default function page() {
         <span
           className={`text-[1.8rem] text-center font-bold text-gray-400 ${caveat.variable} font-caveat tracking-[0.2rem]`}
         >
-          Parcours Scolaires
+          Academic Paths
         </span>
       </div>
 
@@ -40,14 +40,14 @@ export default function page() {
             {/* contenu */}
             <div className="grid grid-cols-[1fr]   lg:grid-cols-[1.3fr_1fr]  xl:grid-cols-[2fr_1fr_1fr]   ">
               <p className="flex gap-2 items-center ">
-                <SpanVariable text="Université" /> :
+                <SpanVariable text="University" /> :
                 <Span text={parcour.universite} />
               </p>
               <p className=" flex gap-2 items-center">
                 {" "}
                 <span>
                   {" "}
-                  <SpanVariable text="Pays" /> : <Span text={parcour.pays} />{" "}
+                  <SpanVariable text="Country" /> : <Span text={parcour.pays} />{" "}
                 </span>{" "}
                 <img
                   src={parcour.drapeau.src}
@@ -56,12 +56,12 @@ export default function page() {
                 />{" "}
               </p>
               <p className=" flex gap-2 items-center">
-                <SpanVariable text="Ville" />
+                <SpanVariable text="City" />
                 :
                 <Span text={parcour.ville} />
               </p>
               <p className=" flex gap-2 items-center">
-                <SpanVariable text="Domaine" />:{" "}
+                <SpanVariable text="Domain" />:{" "}
                 <Span text={parcour.domaine} />
                   
                 
@@ -86,7 +86,7 @@ export default function page() {
                 {/* COMPETENCES ACQUISES */}
                 <div>
                   <span className="text-white font-light rounded-sm px-1 bg-slate-800   cursor-pointer shadow-[0_0_10px_00px_rgba(255,255,255,0.5)]">
-                    Compétences acquises
+                  Skills acquired
                   </span>
                   <div className="flex flex-col mt-5 ">
                     <Competences parcour={parcour}/>
@@ -97,7 +97,7 @@ export default function page() {
                 {/* DEBUT MATIERES CLES */}
                 <div className=" mt-5">
                   <span className="text-white font-light rounded-sm px-1 bg-slate-800 shadow-[0_0_10px_00px_rgba(255,255,255,0.5)] ">
-                    Matières clés
+                  Key subjects
                   </span>
                   {/* Contenu matière clés */}
                   <div className="flex flex-col mt-5 ">

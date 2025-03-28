@@ -12,17 +12,15 @@ export default function page() {
   return (
     <>
       <p className="bg-slate-900 w-[80%] md:text-[1.5rem] mx-auto text-center mt-5 rounded-md p-4 font-light text-gray-200 leading-relaxed ">
-        <span className="text-[#81BFDA] font-semibold"> Ce site </span> a été
-        développé avec
-        <span className="text-[#81BFDA] font-bold ml-1">Next.js</span> et{" "}
-        <span className="text-[#81BFDA] font-bold ml-1">Tailwind css</span> et
-        est 100%{" "}
+        <span className="text-[#81BFDA] font-semibold"> This website </span> was developed using
+        <span className="text-[#81BFDA] font-bold ml-1">Next.js</span> with{" "}
+        <span className="text-[#81BFDA] font-bold ml-1">Tailwind css</span> and
+        is 100%{" "}
         <span className="text-[#81BFDA] font-semibold">responsive.</span> {" "}
         <span>
         <Link href="https://github.com/Mohamadi65/portfolio.git" className="hover:underline">
           {" "}
-          <span>Lien
-          github de ce projet : </span>
+          <span>Github link to this project : </span>
           <FaGithub className="inline-flex" />
         </Link>
         </span>

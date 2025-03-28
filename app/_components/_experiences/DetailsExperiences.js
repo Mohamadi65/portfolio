@@ -45,14 +45,14 @@ useEffect(() => {
           <div className="grid grid-cols-[3fr_1fr_1fr] gap-3 flex-1 max-2xl:grid-cols-[2fr_1fr] max-lg:grid-cols-[1fr] max-md:grid-cols-[1fr_1fr]  ">
             <div className="max-2xl:col-span-full max-md:col-span-full  ">
               <CenterElementDiv>
-                <SpanVariable textColor="text-gray-400" text="Poste" />
+                <SpanVariable textColor="text-gray-400" text="Job" />
                 <span>:</span>
                 <Span text={data.poste} textColor="white" />
               </CenterElementDiv>
             </div>
             <div className="">
               <CenterElementDiv>
-                <SpanVariable text="Pays" textColor="text-gray-400" />
+                <SpanVariable text="Country" textColor="text-gray-400" />
                 <span>:</span>
                 <Span text={data.pays} textColor="white" />
                 {data.pays === "France" ? (
@@ -76,35 +76,35 @@ useEffect(() => {
             </div>
             <div className="justify-self-center  max-2xl:justify-self-auto">
               <CenterElementDiv>
-                <SpanVariable textColor="text-gray-400" text="Année" />
+                <SpanVariable textColor="text-gray-400" text="Year" />
                 <span>:</span>
                 <Span text={data.annee} textColor="white" />
               </CenterElementDiv>
             </div>
             <div className="max-md:col-span-full">
               <CenterElementDiv>
-                <SpanVariable textColor="text-gray-400" text="Entreprise" />
+                <SpanVariable textColor="text-gray-400" text="Company" />
                 <span>:</span>
                 <Span text={data.entreprise} textColor="text-blue-300" />
               </CenterElementDiv>
             </div>
             <div className="">
               <CenterElementDiv>
-                <SpanVariable textColor="text-gray-400" text="Ville" />
+                <SpanVariable textColor="text-gray-400" text="City" />
                 <span>:</span>
                 <Span text={data.ville} textColor="text-white" />
               </CenterElementDiv>
             </div>
             <div className="justify-self-center max-2xl:justify-self-auto">
               <CenterElementDiv>
-                <SpanVariable textColor="text-gray-400" text="Nombre de Mois" />
+                <SpanVariable textColor="text-gray-400" text="Number of Months" />
                 <span>:</span>
                 <Span text={data.nbrMois} textColor="text-white" />
               </CenterElementDiv>
             </div>
           </div>
           <span className="">
-            <button className="bg-blue-800 rounded-md px-2">Détails</button>
+            <button className="bg-blue-800 rounded-md px-2">Details</button>
           </span>
         </div>
       </div>
@@ -123,35 +123,35 @@ function ShowData({ data, setIsOpen }) {
       <div className="flex-1">
         <div className="  max-lg:grid-cols-[1fr] lg:grid-cols-[2fr_1fr] grid grid-cols-[2fr_1fr_1fr_1fr]">
           <CenterElementDiv>
-            <SpanVariable textColor="text-gray-400" text="Poste" />
+            <SpanVariable textColor="text-gray-400" text="Job" />
             <span>:</span>
             <Span text={data.poste} textColor="white" />
           </CenterElementDiv>
           <CenterElementDiv>
-            <SpanVariable textColor="text-gray-400" text="Pays" />
+            <SpanVariable textColor="text-gray-400" text="Country" />
             <span>:</span>
             <Span text={data.pays} textColor="white" />
           </CenterElementDiv>
           <CenterElementDiv>
-            <SpanVariable textColor="text-gray-400" text="Année" />
+            <SpanVariable textColor="text-gray-400" text="Year" />
             <span>:</span>
             <Span text={data.annee} textColor="white" />
           </CenterElementDiv>
 
           <CenterElementDiv>
-            <SpanVariable textColor="text-gray-400" text="Nbre Mois" />
+            <SpanVariable textColor="text-gray-400" text="Number of Months" />
             <span>:</span>
            
             <Span text={data.nbrMois} textColor="white" />
           </CenterElementDiv>
 
           <CenterElementDiv>
-            <SpanVariable textColor="text-gray-400" text="Entrepise" />
+            <SpanVariable textColor="text-gray-400" text="Company" />
             <span>:</span>
             <Span text={data.entreprise} textColor="white" />
           </CenterElementDiv>
           <CenterElementDiv>
-            <SpanVariable textColor="text-gray-400" text="Ville" />
+            <SpanVariable textColor="text-gray-400" text="City" />
             <span>:</span>
             <Span text={data.ville} textColor="white" />
           </CenterElementDiv>
@@ -161,21 +161,21 @@ function ShowData({ data, setIsOpen }) {
             <Span text={data.type} textColor="white" />
           </CenterElementDiv>
           <CenterElementDiv>
-            <SpanVariable textColor="text-gray-400" text="Catégorie" />
+            <SpanVariable textColor="text-gray-400" text="Category" />
             <span>:</span>
             <Span text={data.categorie} textColor="white" />
           </CenterElementDiv>
         </div>
         <div className=" grid grid-cols-2 gap-4 mt-5 max-lg:grid-cols-[1fr]">
           <div className="text-center">
-            <Expander titre={"Infos entreprise"}>
+            <Expander titre={"Company information"}>
               <p className="text-justify text-[#f4f4f5bd]">
                 {data.infosEntreprise}
               </p>
             </Expander>
           </div>
           <div className="">
-          <Expander titre={"Problématique du projet"}>
+          <Expander titre={"Project issues"}>
               <p className="text-justify text-[#f4f4f5bd]">
                 {data.problematique.titre}
               </p>
@@ -185,14 +185,14 @@ function ShowData({ data, setIsOpen }) {
         </div>
         {/* Les limites */}
         <div className=" limites">
-          <Expander titre={"Les limites du projet"}>
+          <Expander titre={"The limits of the project"}>
             <ListesTitreContent data={data.problematique.limites} />
           </Expander>
         </div>
         {/* Les objectifs */}
         <div className="objectif mt-5">
           <p className="text-[#f4f4f5bd] mb-5">{data.action.titre}</p>
-          <Expander titre={"Les objectifs du projet"}>
+          <Expander titre={"The objectives of the project"}>
             <ListesTitreContent data={data.action.objectifs} />
           </Expander>
         </div>
@@ -200,7 +200,7 @@ function ShowData({ data, setIsOpen }) {
         {/* Les missions */}
         <div className="missions mt-5">
           
-          <Expander titre={"Les missions du projet"}>
+          <Expander titre={"The project's missions"}>
             <ListesTitreContent data={data.missions} />
           </Expander>
         </div>
@@ -208,14 +208,14 @@ function ShowData({ data, setIsOpen }) {
         {/* Les technologies */}
         <div className="technologies mt-5">
           
-          <Expander titre={"Les technologies utilisées"}>
+          <Expander titre={"The technologies used"}>
             <ListesTechnologiesContent dataTech={data.technologies} />
           </Expander>
         </div>
         {/* Conclusion */}
         <div className="conclusion mt-5">
           
-          <Expander titre={"conclusion"}>
+          <Expander titre={"Conclusion"}>
             <p>{data.conclusion}</p>
           </Expander>
         </div>

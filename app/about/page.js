@@ -16,59 +16,55 @@ export const metadata = {
 };
 
 export default function page() {
-  
   return (
     <div className="md:min-w-[40%]   md:max-w-[100%] md:p-3 p-2 md:rounded-md mx-auto mt-4 shadow-2xl bg-slate-900 flex flex-col about-opacity ">
       <span className="font-bold text-[1.3rem] mb-3   text-center bg-slate-800   ">
-        À propos de moi 🚀
+        About me 🚀
       </span>
       <IdCard />
-      <Titre titre="Du curieux au développeur passionné" />
+      <Titre titre="From curious to passionate developer" />
 
       <Storytelling>
-       
-        Depuis toujours, j’ai été fasciné par le digital et la manière dont la
-        technologie façonne notre quotidien. Mais c’est en découvrant le
-        développement web que j’ai trouvé ma véritable passion. Mon parcours n’a
-        pas suivi un chemin classique. Autodidacte, j’ai commencé à apprendre à
-        coder par moi-même, explorant HTML, CSS et JavaScript à travers des
-        tutoriels, des projets personnels et des défis en ligne. Chaque ligne de
-        code écrite était une nouvelle opportunité d’apprentissage, un pas de
-        plus vers l’expertise.
+        I&rsquo;ve always been fascinated by digital technology and how it
+        shapes our daily lives. But it was when I discovered web development
+        that I found my true passion. My path didn&rsquo;t follow a traditional
+        path. Self-taught, I began teaching myself to code, exploring HTML, CSS,
+        and JavaScript through tutorials, personal projects, and online
+        challenges. Every line of code I wrote was a new learning opportunity, a
+        step closer to expertise.
       </Storytelling>
-      <Titre titre="Un apprentissage en continu 📚" />
+      <Titre titre="Continuous learning 📚" />
       <Storytelling>
-        Bien que j’ai suivi des formations académiques en informatique, c’est en
-        sortant des sentiers battus que j’ai le plus appris. J’ai complété mon
-        parcours avec des certifications en développement web et des formations
-        en ligne, me spécialisant dans des technologies modernes comme{" "}
+        Although I have academic training in computer science, it was by
+        thinking outside the box that I learned the most. I completed my journey
+        with web development certifications and online training, specializing in
+        modern technologies such as{" "}
         <span className="font-normal text-slate-200 text-[1rem]">
           React js, Next js, Laravel
         </span>
-        ... . Aujourd’hui, je continue à me former au quotidien pour repousser
-        les limites du web et créer des expériences numériques modernes,
-        performantes et accessibles à tous.
+        ... . Today, I continue to train myself daily to push the limits of the
+        web and create modern, efficient digital experiences that are accessible
+        to all.
       </Storytelling>
-      <Titre titre="Mes points forts 🏆" />
+      <Titre titre="My strengths 🏆" />
       <Enumeration
-        titre="Créativité"
-        explication="Transformer des idées en interfaces élégantes et fonctionnelles"
+        titre="Creativity"
+        explication="Transforming ideas into elegant and functional interfaces"
       />
       <Enumeration
-        titre="Autonomie"
-        explication="Capacité à apprendre rapidement et à résoudre des problèmes de manière efficace"
+        titre="Autonomy"
+        explication="Ability to learn quickly and solve problems effectively"
       />
       <Enumeration
-        titre="Rigueur"
-        explication="Code propre, structuré et optimisé pour la performance"
+        titre="Rigor"
+        explication="Clean, structured and performance-optimized code"
       />
 
       <p className="text-[1rem] mt-2">
         {" "}
-        Je suis toujours à la recherche de nouveaux défis et de collaborations
-        enrichissantes. Si vous voulez en savoir plus, n’hésitez pas{" "}
+        I&rsquo;m always looking for new challenges and enriching collaborations. If you&rsquo;d like to know more, don&rsquo;t hesitate to contact me.{" "}
         <Link href="/about/contact" className="text-[#3c93b9] font-bold">
-          à me contacter !{" "}
+        to contact me!{" "}
         </Link>{" "}
       </p>
     </div>

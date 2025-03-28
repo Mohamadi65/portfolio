@@ -7,15 +7,15 @@ import { MdClose, MdComputer, MdMenu } from "react-icons/md";
 
 const navLinks = [
   {
-    name: "Accueil",
+    name: "Home",
     href: "/",
   },
   {
-    name: "À propos",
+    name: "About",
     href: "/about",
   },
   {
-    name: "Projets",
+    name: "Projects",
     href: "/projets",
   },
 ];
