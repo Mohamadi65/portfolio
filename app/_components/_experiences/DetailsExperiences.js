@@ -55,7 +55,7 @@ useEffect(() => {
                 <SpanVariable text="Country" textColor="text-gray-400" />
                 <span>:</span>
                 <Span text={data.pays} textColor="white" />
-                {data.pays === "France" ? (
+                {/* {data.pays === "France" ? (
                   <Image
                     width={25}
                     src={france}
@@ -71,7 +71,7 @@ useEffect(() => {
                     quality={100}
                     className="ml-auto max-2xl:ml-0 max-sm:hidden"
                   />
-                )}
+                )} */}
               </CenterElementDiv>
             </div>
             <div className="justify-self-center  max-2xl:justify-self-auto">
