@@ -42,7 +42,7 @@ useEffect(() => {
         className={`bg-slate-800  cursor-pointer rounded-md p-2 transition-all duration-300 mb-3 `}
       >
         <div className="flex items-start justify-between gap-3">
-          <div className="grid grid-cols-[3fr_1fr_1fr] gap-3 flex-1 max-2xl:grid-cols-[2fr_1fr] max-lg:grid-cols-[1fr] max-md:grid-cols-[1fr_1fr]  ">
+          <div className="grid grid-cols-[3fr_1fr_1fr] gap-3 flex-1 max-2xl:grid-cols-[2fr_1fr] max-lg:grid-cols-[1fr] max-md:grid-cols-[1fr_1fr] max-sm:grid-cols-1  ">
             <div className="max-2xl:col-span-full max-md:col-span-full  ">
               <CenterElementDiv>
                 <SpanVariable textColor="text-gray-400" text="Job" />
@@ -95,8 +95,8 @@ useEffect(() => {
                 <Span text={data.ville} textColor="text-white" />
               </CenterElementDiv>
             </div>
-            <div className="justify-self-center max-2xl:justify-self-auto">
-              <CenterElementDiv>
+            <div className="justify-self-center max-md:col-span-full  max-2xl:justify-self-auto">
+              <CenterElementDiv className="">
                 <SpanVariable textColor="text-gray-400" text="Number of Months" />
                 <span>:</span>
                 <Span text={data.nbrMois} textColor="text-white" />
