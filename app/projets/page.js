@@ -26,34 +26,35 @@ export default function page() {
         </span>
         
       </p>
-      <div className="grid gap-8 grid-cols-2 mt-8 ">
-        {projets.map((projet, i) => (
-          <div
-            href={projet.lienSite}
-            key={i}
-            className="bg-slate-700   shadow-2xl p-4 rounded-md cursor-pointer transition-all duration-300 hover:scale-110 "
-          >
-            <Image
-              src={projet.photo}
-              alt={projet.nom}
-              width={300}
-              height={300}
-             
-              objectFit="cover"
-              className="align-center"
-            />
-            <p className="text-white font-bold mt-2">{projet.nom}</p>
-            <div className="bg-slate-500 rounded-md p-2 mb-auto flex justify-between">
-              <Link href={projet.lienGithub}>
-                <FaGithub className="" />
-              </Link>
-              <Link href={projet.lienSite}>
-                <FaExternalLinkAlt />
-              </Link>
-            </div>
-          </div>
-        ))}
+      <div className="grid gap-8 grid-cols-2 mt-8">
+  {projets.map((projet, i) => (
+    <div
+      href={projet.lienSite}
+      key={i}
+      className="bg-slate-700 shadow-2xl p-4 rounded-md cursor-pointer transition-all duration-300 hover:scale-110"
+    >
+      <div className="flex justify-center">
+        <Image
+          src={projet.photo}
+          alt={projet.nom}
+          width={300}
+          height={300}
+          objectFit="cover"
+        />
       </div>
+      <p className="text-white font-bold mt-2 text-center">{projet.nom}</p>
+      <div className="bg-slate-500 rounded-md p-2 mb-auto flex justify-between">
+        <Link href={projet.lienGithub}>
+          <FaGithub />
+        </Link>
+        <Link href={projet.lienSite}>
+          <FaExternalLinkAlt />
+        </Link>
+      </div>
+    </div>
+  ))}
+</div>
+
     </>
   );
 }
