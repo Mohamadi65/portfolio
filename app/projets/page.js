@@ -26,7 +26,7 @@ export default function page() {
         </span>
         
       </p>
-      <div className="grid relative  grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] mt-8 ">
+      <div className="grid relative  grid-cols-2 mt-8 ">
         {projets.map((projet, i) => (
           <div
             href={projet.lienSite}
