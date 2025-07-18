@@ -26,7 +26,7 @@ export default function page() {
         </span>
         
       </p>
-      <div className="grid gap-8 max-sm:grid-cols-1 sm:grid-cols-3 mt-8">
+      <div className="grid gap-8 max-sm:grid-cols-1 max-md:grid-cols-2 md:grid-cols-3 mt-8">
   {projets.map((projet, i) => (
     <div
       href={projet.lienSite}
