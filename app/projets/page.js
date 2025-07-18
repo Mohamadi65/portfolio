@@ -26,12 +26,12 @@ export default function page() {
         </span>
         
       </p>
-      <div className="grid relative  grid-cols-2 mt-8 ">
+      <div className="grid  grid-cols-2 mt-8 ">
         {projets.map((projet, i) => (
           <div
             href={projet.lienSite}
             key={i}
-            className="bg-slate-700  max-sm:justify-self-center w-[15rem] shadow-2xl p-4 rounded-md cursor-pointer transition-all duration-300 hover:scale-110 "
+            className="bg-slate-700   shadow-2xl p-4 rounded-md cursor-pointer transition-all duration-300 hover:scale-110 "
           >
             <Image
               src={projet.photo}
