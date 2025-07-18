@@ -26,7 +26,7 @@ export default function page() {
         </span>
         
       </p>
-      <div className="grid  grid-cols-2 mt-8 ">
+      <div className="grid gap-8 grid-cols-2 mt-8 ">
         {projets.map((projet, i) => (
           <div
             href={projet.lienSite}
@@ -38,8 +38,9 @@ export default function page() {
               alt={projet.nom}
               width={300}
               height={300}
-              className=""
+             
               objectFit="cover"
+              className="align-center"
             />
             <p className="text-white font-bold mt-2">{projet.nom}</p>
             <div className="bg-slate-500 rounded-md p-2 mb-auto flex justify-between">
